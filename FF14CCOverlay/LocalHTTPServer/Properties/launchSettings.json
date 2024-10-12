@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LocalHTTPServer": {
+      "commandName": "Project",
+      "commandLineArgs": "8080 overlay.html/"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>False</UseWindowsForms>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy $(ProjectDir)template $(OutDir)template /s /i /y&#xD;&#xA;xcopy $(ProjectDir)template $(OutDir)output /s /i /y" />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="CSVReader">
+      <HintPath>..\..\..\CommandEditor\Kakeibo\Kakeibo\CSVReader.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
