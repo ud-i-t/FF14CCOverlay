@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalHTTPServer", "LocalHTTPServer\LocalHTTPServer.csproj", "{308B18A0-1E4C-4194-8D1B-F748152AFDFB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OverlayControler", "OverlayControl\OverlayControler.csproj", "{D0D72EC1-DE11-4570-B6A9-36D5EA45D0A4}"
 EndProject
 Global
@@ -15,14 +13,6 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{308B18A0-1E4C-4194-8D1B-F748152AFDFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{308B18A0-1E4C-4194-8D1B-F748152AFDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{308B18A0-1E4C-4194-8D1B-F748152AFDFB}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{308B18A0-1E4C-4194-8D1B-F748152AFDFB}.Debug|x64.Build.0 = Debug|Any CPU
-		{308B18A0-1E4C-4194-8D1B-F748152AFDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{308B18A0-1E4C-4194-8D1B-F748152AFDFB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{308B18A0-1E4C-4194-8D1B-F748152AFDFB}.Release|x64.ActiveCfg = Release|Any CPU
-		{308B18A0-1E4C-4194-8D1B-F748152AFDFB}.Release|x64.Build.0 = Release|Any CPU
 		{D0D72EC1-DE11-4570-B6A9-36D5EA45D0A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D0D72EC1-DE11-4570-B6A9-36D5EA45D0A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0D72EC1-DE11-4570-B6A9-36D5EA45D0A4}.Debug|x64.ActiveCfg = Debug|x64

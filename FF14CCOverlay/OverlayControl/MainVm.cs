@@ -1,4 +1,5 @@
 ﻿using FTGOverlayControl.Model;
+using OverlayControler;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -115,6 +116,9 @@ namespace FTGOverlayControl
             Matches = _matchModels.Items.Select(x => new MatchViewModel(x, players)).ToList();
 
             ApplyMatch();
+
+            var server = new Server(8080);
+            server.Run();
         }
 
         private void NextMatch()
