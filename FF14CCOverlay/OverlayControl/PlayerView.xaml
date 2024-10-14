@@ -12,18 +12,11 @@
             <TextBlock Width="40">Name:</TextBlock>
             <TextBox x:Name="Player1Name" Width="140" Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         </StackPanel>
-        <GroupBox Header="個人勝ち点" FontWeight="Bold">
+        <GroupBox Header="勝ち点" FontWeight="Bold">
             <StackPanel Orientation="Horizontal" Margin="5 10 5 0">
                 <Button x:Name="RemoveScore1" FontSize="20" Width="28" HorizontalAlignment="Center" VerticalContentAlignment="Center" Command="{Binding DecrementScore}">-</Button>
                 <TextBox x:Name="Score1" FontSize="16" TextAlignment="Center" VerticalContentAlignment="Center" Width="32" Text="{Binding Score, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True"></TextBox>
                 <Button x:Name="AddScore1" FontSize="20" Width="28" HorizontalAlignment="Center" VerticalContentAlignment="Center" Command="{Binding IncrementScore}">+</Button>
-            </StackPanel>
-        </GroupBox>
-        <GroupBox Header="チーム勝ち点" Background="LightPink" FontWeight="Bold">
-            <StackPanel Orientation="Horizontal" Margin="5 10 5 0">
-                <Button x:Name="RemoveTeamScore" FontSize="20" Width="28" HorizontalAlignment="Center" VerticalContentAlignment="Center" Command="{Binding DecrementTeamScore}">-</Button>
-                <TextBox x:Name="TeamScore" FontSize="16" TextAlignment="Center" VerticalContentAlignment="Center" Width="32" Text="{Binding TeamScore, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True"></TextBox>
-                <Button x:Name="AddTeamScore" FontSize="20" Width="28" HorizontalAlignment="Center" VerticalContentAlignment="Center" Command="{Binding IncrementTeamScore}">+</Button>
             </StackPanel>
         </GroupBox>
     </StackPanel>

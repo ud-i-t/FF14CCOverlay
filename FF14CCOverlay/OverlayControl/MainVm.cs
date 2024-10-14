@@ -86,9 +86,7 @@ namespace FTGOverlayControl
             ResetScore = new RelayCommand(_ =>
             {
                 Player1.Score = 0;
-                Player1.TeamScore = 0;
                 Player2.Score = 0;
-                Player2.TeamScore = 0;
                 UpdateScreen();
             }, _ => true);
 
@@ -155,8 +153,6 @@ namespace FTGOverlayControl
             setting.player2 = Player2.SelectedIndex;
             setting.score1 = Player1.Score;
             setting.score2 = Player2.Score;
-            setting.teamScore1 = Player1.TeamScore;
-            setting.teamScore2 = Player2.TeamScore;
             JsonSettingIO.ToJson(SettingFileName, setting);
         }
     }
